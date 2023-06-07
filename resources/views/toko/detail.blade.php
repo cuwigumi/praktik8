@@ -4,9 +4,9 @@
 <div class="row">
   <div class="col-md-4">
       <div class="card" style="width: 100%;">
-          <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
+          <img src="/img/fml.jpeg" class="card-img-top" alt="">
           <div class="card-body">
-              <p class="card-text">PRODUK</p>
+              <p class="card-text">SEVENTEEN - SEVENTEEN 10th Mini Album 'FML'(REGULER VER)</p>
           </div>
       </div>
   </div>

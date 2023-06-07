@@ -4,13 +4,13 @@
 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="/img/jail.jpeg" class="d-block w-100" alt="...">
+      <img src="/img/svt.jpeg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/img/jail.jpeg" class="d-block w-100" alt="...">
+      <img src="/img/svt.jpeg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="/img/jail.jpeg" class="d-block w-100" alt="...">
+      <img src="/img/svt.jpeg" class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
@@ -25,7 +25,7 @@
 @endsection
 
 @section('content2')
-    <h2>DIDUGA TAHANAN KABUR</h2>
+    <h2>All About Seventeen Merch</h2>
 @endsection
     
 @section('content3')
@@ -33,10 +33,10 @@
   <div class="col">
     <div class="card h-100">
     <a href="/toko/detail" class="btn">
-      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
+      <img src="/img/fml.jpeg" class="card-img-top" alt="">
       <div class="card-body">
-        <h5 class="card-title">PRODUK</h5>
-        <p class="card-text">This is a short card.</p>
+        <h5 class="card-title">SEVENTEEN - SEVENTEEN 10th Mini Album 'FML'(REGULER VER)</h5>
+        <p class="card-text">Album Collection.</p>
       </div>
     </a>
     </div>
@@ -44,10 +44,10 @@
   <div class="col">
     <div class="card h-100">
     <a href="toko/detail" class="btn">
-      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
+      <img src="/img/carver.jpeg" class="card-img-top" alt="">
       <div class="card-body">
-        <h5 class="card-title">PRODUK</h5>
-        <p class="card-text">This is a short card.</p>
+        <h5 class="card-title">SEVENTEEN - SEVENTEEN 10th Mini Album 'FML' (CD) (CARAT Version)</h5>
+        <p class="card-text">Mini Album Collection.</p>
       </div>
     </a>
     </div>
@@ -55,10 +55,10 @@
   <div class="col">
     <div class="card h-100">
     <a href="toko/detail" class="btn">
-      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="">
+      <img src="/img/ls.jpeg" class="card-img-top" alt="">
       <div class="card-body">
-        <h5 class="card-title">PRODUK</h5>
-        <p class="card-text">This is a short card.</p>
+        <h5 class="card-title">SEVENTEEN - SEVENTEEN LIGHTSTICK VER.3</h5>
+        <p class="card-text">Lightstick Collection.</p>
       </div>
     </a>
     </div>
@@ -66,10 +66,10 @@
   <div class="col">
     <div class="card h-100">
     <a href="toko/detail" class="btn">
-      <img src="https://cdn3d.iconscout.com/3d/premium/thumb/product-5806313-4863042.png" class="card-img-top" alt="...">
+      <img src="/img/sg.png" class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">PRODUK</h5>
-        <p class="card-text">This is a short card.</p>
+        <h5 class="card-title">SEVENTEEN 2023 SEASON'S GREETINGS</h5>
+        <p class="card-text">Season Greeting Collection.</p>
       </div>
     </a>
     </div>

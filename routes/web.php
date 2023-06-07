@@ -64,6 +64,27 @@ Route::prefix('toko')->group(function(){
     Route::get('/detail', 
         [TokoController::class, 'detail']);
 
-    Route::get('/profile',
-        [TokoController::class, 'index']);
+    Route::get('/about',
+        [TokoController::class, 'about']);
+
+    Route::get('/admin',
+        [TokoController::class, 'admin'])->name('produk.admin');
+
+    Route::get('/customers',
+        [TokoController::class, 'customers']);
+
+    Route::get('create',
+        [TokoController::class, 'create'])->name('produk.create');
+
+    Route::post('/',
+        [TokoController::class, 'store'])->name('produk.store');
+
+    Route::get('/{product}/edit',
+        [TokoController::class, 'edit'])->name('produk.edit');
+
+    Route::delete('/{product}',
+        [TokoController::class, 'destroy'])->name('produk.destroy');
+
+    Route::put('/{product}/edit',
+        [TokoController::class, 'update'])->name('produk.update');
 });
