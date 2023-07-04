@@ -2,6 +2,7 @@
 
 @section('content')
     <h1>Customers</h1>
+    <a href="{{ route('pelanggan.tambah') }}" class="btn btn-primary mb-3">Tambah pelanggan</a>
     <table class="table">
 
         <thead>
@@ -21,6 +22,14 @@
                 <td>{{ $customer->name }}</td>
                 <td>{{ $customer->address }}</td>
                 <td>{{ $customer->no_hp }}</td>
+                <td>
+                <a href="{{ route('pelanggan.ubah', $customer) }}" class="btn btn-primary">Edit</a>
+              <form action="{{ route('pelanggan.hapus', $customer) }}" method="POST" style="display: inline">
+                  @csrf
+                  @method('DELETE')
+                  <button type="submit" onclick="return confirm('Apakah Anda yakin ingin menghapus data ini?')" class="btn btn-danger">Delete</button>
+              </form>
+                </td>
             </tr>
         </tbody>
         

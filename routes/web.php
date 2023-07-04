@@ -67,16 +67,29 @@ Route::prefix('toko')->group(function(){
     Route::get('/about',
         [TokoController::class, 'about']);
 
-    Route::get('/admin',
+
+
+
+
+
+    Route::group(['middleware' => ['auth']], function(){
+        Route::get('/admin',
         [TokoController::class, 'admin'])->name('produk.admin');
 
-    Route::get('/customers',
-        [TokoController::class, 'customers']);
+    } );
 
-    Route::get('create',
+    
+
+
+
+
+
+
+
+    Route::get('/create',
         [TokoController::class, 'create'])->name('produk.create');
 
-    Route::post('/',
+    Route::post('/store',
         [TokoController::class, 'store'])->name('produk.store');
 
     Route::get('/{product}/edit',
@@ -87,4 +100,28 @@ Route::prefix('toko')->group(function(){
 
     Route::put('/{product}/edit',
         [TokoController::class, 'update'])->name('produk.update');
+
+
+    Route::get('/customers',
+        [TokoController::class, 'customers'])->name('pelanggan.customer');
+        
+        Route::get('/toko/tambah',
+        [TokoController::class, 'tambah'])->name('pelanggan.tambah');
+
+    Route::post('/toko',
+        [TokoController::class, 'toko'])->name('pelanggan.toko');
+
+    Route::get('/{customer}/ubah',
+        [TokoController::class, 'ubah'])->name('pelanggan.ubah');
+
+    Route::delete('/customer/{customer}',
+        [TokoController::class, 'hapus'])->name('pelanggan.hapus');
+
+    Route::put('/{customer}',
+        [TokoController::class, 'add'])->name('pelanggan.add');
 });
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
